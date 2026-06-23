@@ -1,0 +1,232 @@
+{
+  "capturedFrom": "figma:5pa9lxNDLuxAdBogkHeON2",
+  "page": "ds",
+  "collections": [
+    "tokens"
+  ],
+  "components": [
+    {
+      "id": "43:86",
+      "name": "Button",
+      "type": "COMPONENT_SET",
+      "description": "Button — primary action control. Type: primary / secondary / ghost. State: default / hover / disabled. (React: components/Button)",
+      "variants": [
+        "Type=Primary, State=Default",
+        "Type=Primary, State=Hover",
+        "Type=Primary, State=Disabled",
+        "Type=Secondary, State=Default",
+        "Type=Secondary, State=Hover",
+        "Type=Secondary, State=Disabled",
+        "Type=Ghost, State=Default",
+        "Type=Ghost, State=Hover",
+        "Type=Ghost, State=Disabled"
+      ]
+    },
+    {
+      "id": "43:121",
+      "name": "Input",
+      "type": "COMPONENT_SET",
+      "description": "Input — text field with optional label and helper/error text. State: default / focus / error. (React: components/Input)",
+      "variants": [
+        "State=Default",
+        "State=Focus",
+        "State=Error"
+      ]
+    },
+    {
+      "id": "43:133",
+      "name": "Badge",
+      "type": "COMPONENT_SET",
+      "description": "Badge — small status pill for inline labels. Variant: success / danger / neutral. (React: components/Badge)",
+      "variants": [
+        "Variant=Success",
+        "Variant=Danger",
+        "Variant=Neutral"
+      ]
+    },
+    {
+      "id": "43:139",
+      "name": "Nav Link",
+      "type": "COMPONENT_SET",
+      "description": "NavLink — navigation anchor with active-state underline. State: default / active. (React: components/NavLink)",
+      "variants": [
+        "State=Default",
+        "State=Active"
+      ]
+    },
+    {
+      "id": "43:122",
+      "name": "Card/Default",
+      "type": "COMPONENT",
+      "description": "Card — surface container with optional media, title, body, and footer/link. No variants. (React: components/Card)",
+      "variants": []
+    },
+    {
+      "id": "43:142",
+      "name": "Section/Navbar",
+      "type": "COMPONENT",
+      "description": "Navbar — top navigation band; composes NavLink + Button. Props: brand, links, ctaLabel. (React: sections/Navbar)",
+      "variants": []
+    },
+    {
+      "id": "43:157",
+      "name": "Section/Hero",
+      "type": "COMPONENT",
+      "description": "Hero — top-of-page marketing block; composes Button. Props: eyebrow, title, subtitle, primaryCta, secondaryCta. (React: sections/Hero)",
+      "variants": []
+    },
+    {
+      "id": "43:167",
+      "name": "Section/Feature Row",
+      "type": "COMPONENT",
+      "description": "FeatureRow — three-up feature grid; composes Card. Props: title, subtitle, features[]. (React: sections/FeatureRow)",
+      "variants": []
+    },
+    {
+      "id": "43:198",
+      "name": "Section/Footer",
+      "type": "COMPONENT",
+      "description": "Footer — page footer with link row + copyright. Props: links[], copyright. (React: sections/Footer)",
+      "variants": []
+    },
+    {
+      "id": "43:190",
+      "name": "Section/CTA Band",
+      "type": "COMPONENT",
+      "description": "CtaBand — closing call-to-action with email capture; composes Input + Button. Props: title, subtitle, placeholder, ctaLabel. (React: sections/CtaBand)",
+      "variants": []
+    }
+  ],
+  "tokens": [
+    {
+      "name": "color/primary",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/primary-hover",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/secondary",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/bg",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/surface",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/text-strong",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/text-muted",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/border",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/success",
+      "type": "COLOR"
+    },
+    {
+      "name": "color/danger",
+      "type": "COLOR"
+    },
+    {
+      "name": "spacing/space-1",
+      "type": "FLOAT"
+    },
+    {
+      "name": "spacing/space-2",
+      "type": "FLOAT"
+    },
+    {
+      "name": "spacing/space-3",
+      "type": "FLOAT"
+    },
+    {
+      "name": "spacing/space-4",
+      "type": "FLOAT"
+    },
+    {
+      "name": "spacing/space-5",
+      "type": "FLOAT"
+    },
+    {
+      "name": "spacing/space-6",
+      "type": "FLOAT"
+    },
+    {
+      "name": "radius/radius-sm",
+      "type": "FLOAT"
+    },
+    {
+      "name": "radius/radius-md",
+      "type": "FLOAT"
+    },
+    {
+      "name": "radius/radius-lg",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/font-family",
+      "type": "STRING"
+    },
+    {
+      "name": "typography/size-xs",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/size-sm",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/size-base",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/size-lg",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/size-xl",
+      "type": "FLOAT"
+    },
+    {
+      "name": "typography/size-2xl",
+      "type": "FLOAT"
+    }
+  ],
+  "textStyles": [
+    {
+      "name": "Display",
+      "size": 40
+    },
+    {
+      "name": "Heading",
+      "size": 28
+    },
+    {
+      "name": "Subheading",
+      "size": 20
+    },
+    {
+      "name": "Body",
+      "size": 16
+    },
+    {
+      "name": "Caption",
+      "size": 12
+    },
+    {
+      "name": "Label",
+      "size": 14
+    }
+  ]
+}

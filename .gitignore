@@ -1,0 +1,14 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# tsc -b composite artifacts (vite.config.ts is the source of truth)
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# figma-ds-sync: transient live-capture (snapshot .ds-snapshot.json IS committed)
+.ds-current.json

@@ -1,0 +1,101 @@
+/* ============================================================================
+   Tailwind v4 @theme — maps DS tokens (--ds-* vars from tokens.css) into
+   Tailwind's theme namespaces so they generate utilities. NO literal values
+   here: every entry references a --ds-* token. Color/font/text default
+   namespaces are reset to `initial` so the DS is the single source of truth.
+   ========================================================================== */
+@theme {
+  /* reset Tailwind defaults in the namespaces the DS owns */
+  --color-*: initial;
+  --font-*: initial;
+  --text-*: initial;
+
+  /* ---- font families -> font-instrument / font-accurat / font-pixform ---- */
+  --font-instrument: var(--ds-font-antiqa);
+  --font-accurat: var(--ds-font-grotesk);
+  --font-pixform: var(--ds-font-pixel);
+
+  /* ---- colors (semantic) -> bg-* / text-* / border-* ---- */
+  --color-fg: var(--ds-color-fg);
+  --color-fg-muted: var(--ds-color-fg-muted);
+  --color-fg-on-color: var(--ds-color-fg-on-color);
+  --color-fg-brown: var(--ds-color-fg-brown);
+  --color-fg-teal: var(--ds-color-fg-teal);
+  --color-fg-olive: var(--ds-color-fg-olive);
+
+  --color-surface-base: var(--ds-color-surface-base);
+  --color-surface-card: var(--ds-color-surface-card);
+  --color-card-white: var(--ds-color-card-white);
+  --color-card-red: var(--ds-color-card-red);
+  --color-card-green: var(--ds-color-card-green);
+  --color-card-yellow: var(--ds-color-card-yellow);
+  --color-card-pink: var(--ds-color-card-pink);
+  --color-card-violet: var(--ds-color-card-violet);
+  --color-oncard-red: var(--ds-color-oncard-red);
+  --color-oncard-green: var(--ds-color-oncard-green);
+  --color-oncard-yellow: var(--ds-color-oncard-yellow);
+  --color-oncard-yellow-dark: var(--ds-color-oncard-yellow-dark);
+  --color-oncard-pink: var(--ds-color-oncard-pink);
+  --color-oncard-violet: var(--ds-color-oncard-violet);
+
+  --color-line: var(--ds-color-line);
+  --color-control: var(--ds-color-control);
+  --color-control-on-white: var(--ds-color-control-on-white);
+  --color-control-on-brown: var(--ds-color-control-on-brown);
+  --color-control-on-yellow-dark: var(--ds-color-control-on-yellow-dark);
+
+  --color-tech-purple: var(--ds-color-tech-purple);
+  --color-tech-red: var(--ds-color-tech-red);
+  --color-tech-green: var(--ds-color-tech-green);
+  --color-tech-gray: var(--ds-color-tech-gray);
+  --color-super-yellow: var(--ds-color-super-yellow);
+  --color-bar-filled: var(--ds-color-bar-filled);
+  --color-bar-empty: var(--ds-color-bar-empty);
+  --color-black: var(--ds-color-black);
+  --color-white: var(--ds-color-white);
+  --color-gray: var(--ds-color-gray);
+
+  /* ---- spacing (t-shirt) -> p-* / m-* / gap-* / w-* / h-* ---- */
+  --spacing-xxxs: var(--ds-space-xxxs);
+  --spacing-xxs: var(--ds-space-xxs);
+  --spacing-xs: var(--ds-space-xs);
+  --spacing-s: var(--ds-space-s);
+  --spacing-m: var(--ds-space-m);
+  --spacing-l: var(--ds-space-l);
+  --spacing-xl: var(--ds-space-xl);
+  --spacing-xxl: var(--ds-space-xxl);
+
+  /* ---- container max-width (exposes existing size/base-width token) ---- */
+  --container-base: var(--ds-size-base-width);
+
+  /* ---- radius -> rounded-* ---- */
+  --radius-sm: var(--ds-radius-sm);
+  --radius-md: var(--ds-radius-md);
+  --radius-lg: var(--ds-radius-lg);
+  --radius-full: var(--ds-radius-full);
+
+  /* ---- typography presets -> text-* (size + line-height + weight bundled) ---- */
+  --text-caps: var(--ds-text-caps);
+  --text-caps--line-height: var(--ds-line-height-7);
+  --text-pixel: var(--ds-text-pixel);
+  --text-pixel--line-height: var(--ds-line-height-9);
+  --text-grotesk: var(--ds-text-grotesk);
+  --text-grotesk--line-height: var(--ds-line-height-10);
+  --text-bold: var(--ds-text-grotesk);
+  --text-bold--line-height: var(--ds-line-height-10);
+  --text-bold--font-weight: var(--ds-font-weight-bold);
+  --text-m: var(--ds-text-m);
+  --text-m--line-height: var(--ds-line-height-14);
+  --text-h4: var(--ds-text-m);
+  --text-h4--line-height: var(--ds-line-height-14);
+  --text-h4--font-weight: var(--ds-font-weight-bold);
+  --text-h3: var(--ds-text-h3);
+  --text-h3--line-height: var(--ds-line-height-18);
+  --text-h3--font-weight: var(--ds-font-weight-bold);
+  --text-description: var(--ds-text-description);
+  --text-description--line-height: var(--ds-line-height-27);
+  --text-h2: var(--ds-text-h2);
+  --text-h2--line-height: var(--ds-line-height-36);
+  --text-h1: var(--ds-text-h1);
+  --text-h1--line-height: var(--ds-line-height-76);
+}

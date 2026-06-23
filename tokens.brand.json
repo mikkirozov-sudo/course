@@ -1,0 +1,96 @@
+{
+  "$meta": {
+    "source": "figma:YfjBIii1QpKraZegUif3lY",
+    "mode": "brand",
+    "note": "Canonical brand-theme tokens, aliases flattened. wireframe mode omitted (lo-fi placeholder).",
+    "count": 58
+  },
+  "tokens": {
+    "color": {
+      "bar": {
+        "on-base-filled": "#b8c6c3",
+        "on-base-empty": "#ffffff"
+      },
+      "tech": {
+        "purple": "#9747ff",
+        "green": "#00867b",
+        "red": "#cc0000",
+        "gray": "#cbcbcb"
+      },
+      "black": "#000000",
+      "text": {
+        "on-color": "#ffffff",
+        "primary": "#000000",
+        "secondary": "#979797",
+        "brown": "#d1a63b",
+        "green": "#00867b",
+        "yellow-dark": "#646905"
+      },
+      "control": {
+        "secondary-default": "#eaeaea",
+        "on-color-white": "#ffffff",
+        "on-color-brown": "#d1a63b",
+        "on-color-yellow-dark": "#fffd9e"
+      },
+      "bg": {
+        "base": "#f2f2f2",
+        "card": {
+          "white": "#ffffff",
+          "red": "#f5cfca",
+          "green": "#d4eee7",
+          "yellow": "#e0e2a4",
+          "pink": "#fad5e7",
+          "violet": "#ddd6ef"
+        },
+        "on-card": {
+          "red": "#f7e0dd",
+          "green": "#d4eee7",
+          "yellow-dark": "#fffd9e",
+          "pink": "#ffe3f1",
+          "yellow": "#e0e2a4",
+          "violet": "#ddd6ef"
+        }
+      },
+      "gray": "#cbcbcb",
+      "line": "#eaeaea",
+      "super-yellow": "#ffe900"
+    },
+    "space": {
+      "neg-xs": -8,
+      "xxxs": 2,
+      "xxs": 4,
+      "xs": 8,
+      "s": 14,
+      "m": 20,
+      "l": 24,
+      "xl": 30,
+      "xxl": 90
+    },
+    "radius": {
+      "s": 4,
+      "m": 8,
+      "l": 12,
+      "full": 999
+    },
+    "font": {
+      "family": {
+        "pixel": "Pixform",
+        "grotesk": "Akkurat LL Cyrillic",
+        "antiqa": "Instrument Serif"
+      },
+      "size": {
+        "h1": 84,
+        "h2": 40,
+        "h3": 20,
+        "description": 30,
+        "m": 15,
+        "text-grotesk": 11,
+        "text-pixel": 10,
+        "caps": 8
+      }
+    },
+    "size": {
+      "base-width": 830
+    }
+  }
+}

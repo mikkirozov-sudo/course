@@ -1,0 +1,192 @@
+/* ============================================================================
+   Design tokens as CSS custom properties.  TWO-TIER:
+     --ds-color-<primitive>   raw values (internal building blocks)
+     --ds-color-<role>        semantic tokens -> reference a primitive
+   :root = brand theme (the single real mode in Figma).
+   [data-theme="wireframe"] = reconstructed lo-fi mode (fonts->system, surfaces->white).
+   Generated from tokens/_raw.json — do not hand-edit values; edit the source + regen.
+   ========================================================================== */
+
+:root {
+  /* ---- PRIMITIVES: color ---- */
+  --ds-color-ink: #000000;
+  --ds-color-paper: #ffffff;
+  --ds-color-gray-100: #f2f2f2;
+  --ds-color-gray-200: #eaeaea;
+  --ds-color-gray-300: #cbcbcb;
+  --ds-color-gray-500: #979797;
+  --ds-color-sage: #b8c6c3;
+  --ds-color-purple: #9747ff;
+  --ds-color-teal: #00867b;
+  --ds-color-red: #cc0000;
+  --ds-color-yellow: #ffe900;
+  --ds-color-brown: #d1a63b;
+  --ds-color-olive: #646905;
+  --ds-color-red-50: #f7e0dd;
+  --ds-color-red-100: #f5cfca;
+  --ds-color-green-100: #d4eee7;
+  --ds-color-yellow-50: #fffd9e;
+  --ds-color-yellow-100: #e0e2a4;
+  --ds-color-pink-50: #ffe3f1;
+  --ds-color-pink-100: #fad5e7;
+  --ds-color-violet-100: #ddd6ef;
+
+  /* ---- PRIMITIVES: spacing (px) ---- */
+  --ds-space-neg-8: -8px;
+  --ds-space-2: 2px;
+  --ds-space-4: 4px;
+  --ds-space-8: 8px;
+  --ds-space-14: 14px;
+  --ds-space-20: 20px;
+  --ds-space-24: 24px;
+  --ds-space-30: 30px;
+  --ds-space-90: 90px;
+
+  /* ---- PRIMITIVES: radius ---- */
+  --ds-radius-4: 4px;
+  --ds-radius-8: 8px;
+  --ds-radius-12: 12px;
+  --ds-radius-999: 999px;
+
+  /* ---- PRIMITIVES: font size (px) ---- */
+  --ds-font-size-8: 8px;
+  --ds-font-size-10: 10px;
+  --ds-font-size-11: 11px;
+  --ds-font-size-15: 15px;
+  --ds-font-size-20: 20px;
+  --ds-font-size-30: 30px;
+  --ds-font-size-40: 40px;
+  --ds-font-size-84: 84px;
+
+  /* ---- PRIMITIVES: line height (px, from Styles specimen) ---- */
+  --ds-line-height-7: 7px;
+  --ds-line-height-9: 9px;
+  --ds-line-height-10: 10px;
+  --ds-line-height-14: 14px;
+  --ds-line-height-18: 18px;
+  --ds-line-height-27: 27px;
+  --ds-line-height-36: 36px;
+  --ds-line-height-76: 76px;
+
+  /* ---- PRIMITIVES: font family ---- */
+  --ds-font-family-instrument: 'Instrument Serif', serif;       /* antiqa */
+  --ds-font-family-accurat: 'Akkurat LL', system-ui, sans-serif; /* grotesk */
+  --ds-font-family-pixform: 'Pixform', ui-monospace, monospace;  /* pixel */
+
+  /* ---- PRIMITIVES: font weight ---- */
+  --ds-font-weight-regular: 400;
+  --ds-font-weight-bold: 700;
+
+  /* ---- PRIMITIVES: size ---- */
+  --ds-size-base-width: 830px;
+
+  /* ========================================================================
+     SEMANTIC tokens (the consumption layer -> these become Tailwind utilities)
+     ====================================================================== */
+
+  /* foreground / text */
+  --ds-color-fg: var(--ds-color-ink);            /* color/text/primary */
+  --ds-color-fg-muted: var(--ds-color-gray-500); /* color/text/secondary */
+  --ds-color-fg-on-color: var(--ds-color-paper); /* color/text/on-color */
+  --ds-color-fg-brown: var(--ds-color-brown);    /* color/text/brown */
+  --ds-color-fg-teal: var(--ds-color-teal);      /* color/text/green */
+  --ds-color-fg-olive: var(--ds-color-olive);    /* color/text/yellow-dark */
+
+  /* surfaces / backgrounds */
+  --ds-color-surface-base: var(--ds-color-gray-100); /* color/bg/base */
+  --ds-color-surface-card: var(--ds-color-paper);    /* ergonomic alias of card-white */
+  --ds-color-card-white: var(--ds-color-paper);      /* color/bg/card/white */
+  --ds-color-card-red: var(--ds-color-red-100);
+  --ds-color-card-green: var(--ds-color-green-100);
+  --ds-color-card-yellow: var(--ds-color-yellow-100);
+  --ds-color-card-pink: var(--ds-color-pink-100);
+  --ds-color-card-violet: var(--ds-color-violet-100);
+  --ds-color-oncard-red: var(--ds-color-red-50);
+  --ds-color-oncard-green: var(--ds-color-green-100);
+  --ds-color-oncard-yellow: var(--ds-color-yellow-100);
+  --ds-color-oncard-yellow-dark: var(--ds-color-yellow-50);
+  --ds-color-oncard-pink: var(--ds-color-pink-50);
+  --ds-color-oncard-violet: var(--ds-color-violet-100);
+
+  /* lines / controls */
+  --ds-color-line: var(--ds-color-gray-200);     /* color/line */
+  --ds-color-control: var(--ds-color-gray-200);  /* color/control/secondary-default */
+  --ds-color-control-on-white: var(--ds-color-paper);          /* color/control/on-color-white */
+  --ds-color-control-on-brown: var(--ds-color-brown);          /* color/control/on-color-brown */
+  --ds-color-control-on-yellow-dark: var(--ds-color-yellow-50);/* color/control/on-color-yellow-dark */
+
+  /* tech / status / brand */
+  --ds-color-tech-purple: var(--ds-color-purple);
+  --ds-color-tech-red: var(--ds-color-red);
+  --ds-color-tech-green: var(--ds-color-teal);
+  --ds-color-tech-gray: var(--ds-color-gray-300);
+  --ds-color-super-yellow: var(--ds-color-yellow);
+  --ds-color-bar-filled: var(--ds-color-sage);   /* color/bar/on-base-filled */
+  --ds-color-bar-empty: var(--ds-color-paper);   /* color/bar/on-base-empty */
+  --ds-color-black: var(--ds-color-ink);
+  --ds-color-white: var(--ds-color-paper);
+  --ds-color-gray: var(--ds-color-gray-300);
+
+  /* semantic spacing (t-shirt scale -> primitive px) */
+  --ds-space-neg-xs: var(--ds-space-neg-8);
+  --ds-space-xxxs: var(--ds-space-2);
+  --ds-space-xxs: var(--ds-space-4);
+  --ds-space-xs: var(--ds-space-8);
+  --ds-space-s: var(--ds-space-14);
+  --ds-space-m: var(--ds-space-20);
+  --ds-space-l: var(--ds-space-24);
+  --ds-space-xl: var(--ds-space-30);
+  --ds-space-xxl: var(--ds-space-90);
+
+  /* semantic radius */
+  --ds-radius-sm: var(--ds-radius-4);
+  --ds-radius-md: var(--ds-radius-8);
+  --ds-radius-lg: var(--ds-radius-12);
+  --ds-radius-full: var(--ds-radius-999);
+
+  /* semantic font families */
+  --ds-font-antiqa: var(--ds-font-family-instrument);
+  --ds-font-grotesk: var(--ds-font-family-accurat);
+  --ds-font-pixel: var(--ds-font-family-pixform);
+
+  /* semantic font sizes (role -> primitive) */
+  --ds-text-caps: var(--ds-font-size-8);
+  --ds-text-pixel: var(--ds-font-size-10);
+  --ds-text-grotesk: var(--ds-font-size-11);
+  --ds-text-m: var(--ds-font-size-15);
+  --ds-text-h3: var(--ds-font-size-20);
+  --ds-text-description: var(--ds-font-size-30);
+  --ds-text-h2: var(--ds-font-size-40);
+  --ds-text-h1: var(--ds-font-size-84);
+
+  /* border */
+  --ds-border-width-default: 1px;     /* assigned — no width token in Figma (see DECISIONS) */
+  --ds-border-color-default: var(--ds-color-line);
+}
+
+/* ============================================================================
+   WIREFRAME mode — lo-fi theme reconstructed from Figma's 'wf' mode
+   (fonts collapse to system, surfaces flatten to white). Toggle via
+   <html data-theme="wireframe">. Demonstrates the modes the file ships with.
+   ========================================================================== */
+[data-theme='wireframe'] {
+  --ds-font-family-instrument: system-ui, sans-serif;
+  --ds-font-family-accurat: system-ui, sans-serif;
+  --ds-font-family-pixform: ui-monospace, monospace;
+
+  --ds-color-fg-muted: var(--ds-color-ink);     /* wf secondary text = #000 */
+  --ds-color-surface-base: var(--ds-color-paper);
+  --ds-color-surface-card: var(--ds-color-paper);
+  --ds-color-card-red: var(--ds-color-paper);
+  --ds-color-card-green: var(--ds-color-paper);
+  --ds-color-card-yellow: var(--ds-color-paper);
+  --ds-color-card-pink: var(--ds-color-paper);
+  --ds-color-card-violet: var(--ds-color-paper);
+  --ds-color-oncard-red: var(--ds-color-paper);
+  --ds-color-oncard-green: var(--ds-color-paper);
+  --ds-color-oncard-yellow: var(--ds-color-paper);
+  --ds-color-oncard-yellow-dark: var(--ds-color-paper);
+  --ds-color-oncard-pink: var(--ds-color-paper);
+  --ds-color-oncard-violet: var(--ds-color-paper);
+  --ds-color-bar-filled: var(--ds-color-paper);
+}

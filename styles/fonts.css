@@ -1,0 +1,40 @@
+/* Local fonts only — loaded from ./fonts/. Never Google Fonts / CDN.
+   Families: Instrument Serif (antiqa), Akkurat LL (grotesk), Pixform (pixel). */
+
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('../fonts/InstrumentSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Instrument Serif';
+  src: url('../fonts/InstrumentSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akkurat LL';
+  src: url('../fonts/AkkuratLLCyrTT-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Akkurat LL';
+  src: url('../fonts/AkkuratLLCyrTT-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pixform';
+  src: url('../fonts/Pixform.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
