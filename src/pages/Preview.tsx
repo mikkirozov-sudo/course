@@ -64,7 +64,7 @@ export default function Preview() {
       {/* header */}
       <header className="flex flex-col gap-m">
         <div className="flex items-center justify-between">
-          <h1 className="font-instrument text-h1">Tokens</h1>
+          <h1 className="font-instrument text-h1">Main tokens</h1>
           <button
             type="button"
             onClick={() => setTheme(!wireframe)}
